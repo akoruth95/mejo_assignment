@@ -18,7 +18,7 @@ class CreatePlayersTable extends Migration
         $table->string('last') - default('');
         $table->integer('gamesPlayed') - default(0);
         $table->integer('avgMinutes') - default(0);
-        $table->integer('ppg');
+        $table->integer('ppg') - default(0);
         $table->timestamps();
       });
 
