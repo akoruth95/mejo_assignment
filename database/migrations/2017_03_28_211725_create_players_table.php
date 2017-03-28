@@ -14,11 +14,11 @@ class CreatePlayersTable extends Migration
     public function up()
     {
       Schema::create('players', function(Blueprint $table) {
-        $table->string('first') - default('');
-        $table->string('home');
-        $table->string('away');
-        $table->integer('ptsHome');
-        $table->integer('ptsAway');
+        $table->string('first') - default();
+        $table->string('last') - default('');
+        $table->integer('gamesPlayed') - default(0);
+        $table->integer('avgMinutes') - default(0);
+        $table->integer('ppg');
         $table->timestamps();
       });
 
